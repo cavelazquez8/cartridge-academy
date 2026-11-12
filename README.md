@@ -8,11 +8,12 @@ No dependencies or build step are required. Run `npm run dev` and open `http://l
 
 ## Contents
 
-- `dist/app.js`: routing, mission workspace, progress, journal, focus timer, retrieval practice, import/export.
-- `dist/curriculum.js`: 28 substantive missions across seven worlds, with tasks, examples, observable checks, questions, transfer challenges, and primary sources.
-- `dist/pedagogy.js`: evidence-linked learning principles, spaced-review cards, and glossary.
-- `dist/labs.js`: interactive game-loop, collision, fixed-point, and pixel-art/animation labs. BMP export uses an uncompressed 4bpp indexed Windows BMP and corresponding Butano sprite JSON.
-- `dist/style.css`: responsive presentation.
+- `dist/app.js`: routing, quest stepper, progress, notes, focus timer, recall deck, import/export (old v1 backups migrate automatically).
+- `dist/curriculum.js`: tracks and lesson aggregation. Planned lessons show on the map as "planned".
+- `dist/content/*.js`: lessons. Each is a quest: hook, predict, try it, break it, decide, twist, check. `bootcamp.js` and `core.js` are written; genre tracks, art side quests, and the capstone are next.
+- `dist/pedagogy.js`: learning principles and glossary. Recall cards are generated from each lesson's check questions.
+- `dist/labs.js`: interactive game-loop, collision, fixed-point, and pixel-art labs.
+- `scripts/compile-lessons.mjs`: compiles every lesson's C++ example against Butano in a scratch copy of a Butano project (`node scripts/compile-lessons.mjs <scratch-project>`).
 
 The app does not execute C++, read local WSL files, or run a GBA emulator. Coding tasks happen in the learner's own project. Mission completion records self-reported evidence. Browser labs are conceptual models, clearly labelled as such. The source project at `~/Unamed-Project` was inspected read-only; no source game files were changed.
 
