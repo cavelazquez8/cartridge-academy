@@ -26,4 +26,6 @@ Progress and pixel art persist in localStorage on the current browser origin. Ex
 
 Predict, build, inspect, retrieve, explain, and transfer. Evidence and university guidance are linked inside Resources → How learning works. Reviews use simple 1/3/7/14/30-day intervals. These intervals are practical defaults, not an optimized prescription. There are no missed-day penalties or claims that completing a checklist guarantees expertise.
 
-This Site is configured for private hosting in `.openai/hosting.json`.
+## Hosting
+
+Deployed to GitHub Pages by `.github/workflows/pages.yml` on every push to `main`. In the repository settings, set Pages → Source to "GitHub Actions". The site will be at https://cavelazquez8.github.io/cartridge-academy/.
